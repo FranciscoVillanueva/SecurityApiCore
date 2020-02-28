@@ -12,3 +12,4 @@ C:\Users\Curso\source\repos\SecurityCore\SecurityCore\obj\Debug\netcoreapp2.1\Se
 C:\Users\Curso\source\repos\SecurityCore\SecurityCore\obj\Debug\netcoreapp2.1\SecurityCore.RazorTargetAssemblyInfo.cache
 C:\Users\Curso\source\repos\SecurityCore\SecurityCore\obj\Debug\netcoreapp2.1\SecurityCore.dll
 C:\Users\Curso\source\repos\SecurityCore\SecurityCore\obj\Debug\netcoreapp2.1\SecurityCore.pdb
+C:\Users\Curso\source\repos\SecurityCore\SecurityCore\obj\Debug\netcoreapp2.1\SecurityCore.csprojAssemblyReference.cache

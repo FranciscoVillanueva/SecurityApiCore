@@ -7,8 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using SecurityCore.Models;
 //using AcademyLog;
 namespace SecurityCore.Controllers
-{
-    
+{ 
     [ApiController]
     public class NewPasswordController : ControllerBase
     {

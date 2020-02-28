@@ -5,10 +5,10 @@ EXPOSE 443
 
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
-COPY ["SecurityCore/SecurityCore.csproj", "SecurityCore/"]
-RUN dotnet restore "SecurityCore/SecurityCore.csproj"
+COPY ["SecurityCore.csproj", ""]
+RUN dotnet restore "SecurityCore.csproj"
 COPY . .
-WORKDIR "/src/SecurityCore"
+WORKDIR "/src"
 RUN dotnet build "SecurityCore.csproj" -c Release -o /app
 
 FROM build AS publish
