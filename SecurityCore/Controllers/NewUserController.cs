@@ -8,12 +8,12 @@ using SecurityCore.Models;
 
 namespace SecurityCore.Controllers
 {
-
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class NewUserController : ControllerBase
     {
         SecurityApiContext db = new SecurityApiContext();
+        [HttpPost]
         public ActionResult CreateUser(NewUser newUser)
         {
             if (db.EndUser.Any(x => x.UserName.ToUpper() == newUser.UserName.ToUpper()))

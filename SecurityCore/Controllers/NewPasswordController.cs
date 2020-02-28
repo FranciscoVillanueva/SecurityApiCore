@@ -5,16 +5,17 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SecurityCore.Models;
-
+//using AcademyLog;
 namespace SecurityCore.Controllers
 {
-    [Route("api/[controller]/[action]")]
+    
     [ApiController]
     public class NewPasswordController : ControllerBase
     {
         //LogEntity log = new LogEntity();
         SecurityApiContext db = new SecurityApiContext();
         [HttpPost]
+        [Route("api/NewPassword/ChangePassword")]
         public bool ChangePassword(ChangePassword user)
         {
             try
