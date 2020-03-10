@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.960
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityCore", "SecurityCore\SecurityCore.csproj", "{0A947AE2-18E3-4EFA-8A11-33346A31D840}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecurityCore", "SecurityCore\SecurityCore.csproj", "{0A947AE2-18E3-4EFA-8A11-33346A31D840}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTests", "ApiTests\ApiTests.csproj", "{0D283D80-7C08-419E-B066-EF00144E1EFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0A947AE2-18E3-4EFA-8A11-33346A31D840}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A947AE2-18E3-4EFA-8A11-33346A31D840}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A947AE2-18E3-4EFA-8A11-33346A31D840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D283D80-7C08-419E-B066-EF00144E1EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D283D80-7C08-419E-B066-EF00144E1EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D283D80-7C08-419E-B066-EF00144E1EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D283D80-7C08-419E-B066-EF00144E1EFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

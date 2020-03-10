@@ -7,12 +7,29 @@ using Microsoft.AspNetCore.Mvc;
 using SecurityCore.Models;
 //using AcademyLog;
 namespace SecurityCore.Controllers
-{ 
+{
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class NewPasswordController : ControllerBase
     {
+        SecurityApiContext db;
+        MySps Sp;
+        public NewPasswordController(bool test = false)
+        {
+            if (test)
+            {
+                db = new SecurityApiContextMock();
+                Sp = new MySpsMock();
+            }
+            else
+            {
+                db = new SecurityApiContext();
+                Sp = new MySps();
+            }
+        }
+
         //LogEntity log = new LogEntity();
-        SecurityApiContext db = new SecurityApiContext();
+        //SecurityApiContext db = new SecurityApiContext();
         [HttpPost]
         [Route("api/NewPassword/ChangePassword")]
         public bool ChangePassword(ChangePassword user)
@@ -20,7 +37,7 @@ namespace SecurityCore.Controllers
             try
             {
                 EndUser UserFromBd = db.EndUser.Where(x => x.UserName.ToUpper() == user.UserName.ToUpper()).First();
-                byte[] newPass = new MySps().EncriptaSp(user.NewPassword);
+                byte[] newPass = Sp.EncriptaSp(user.NewPassword);
                 UserFromBd.Password = newPass;
                 //log.mensaje = "the user " + user.UserName + " changed password";
                 //log.aplicacion = "security";

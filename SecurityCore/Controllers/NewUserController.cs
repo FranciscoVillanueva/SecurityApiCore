@@ -12,7 +12,23 @@ namespace SecurityCore.Controllers
     [ApiController]
     public class NewUserController : ControllerBase
     {
-        SecurityApiContext db = new SecurityApiContext();
+        SecurityApiContext db;
+        MySps Sp;
+
+        public NewUserController(bool test = false)
+        {
+            if (test)
+            {
+                db = new SecurityApiContextMock();
+                Sp = new MySpsMock();
+            }
+            else
+            {
+                db = new SecurityApiContext();
+                Sp = new MySps();
+            }
+        }
+
         [HttpPost]
         public ActionResult CreateUser(NewUser newUser)
         {
@@ -36,7 +52,7 @@ namespace SecurityCore.Controllers
                     UserName = newUser.UserName.ToUpper(),
                     FirstName = newUser.FirstName,
                     LastName = newUser.LastName,
-                    Password = new MySps().EncriptaSp(newUser.Password),
+                    Password = Sp.EncriptaSp(newUser.Password),
                     DomainId = 1,
                     UserEntityId = usEnt.UserEntityId,
                     UserTypeCd = "EXT",

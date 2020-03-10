@@ -15,7 +15,22 @@ namespace SecurityCore.Controllers
     [ApiController]
     public class SessionsController : ControllerBase
     {
-        SecurityApiContext db = new SecurityApiContext();
+        SecurityApiContext db;
+        MySps Sp;
+
+        public SessionsController(bool test = false)
+        {
+            if (test)
+            {
+                db = new SecurityApiContextMock();
+                Sp = new MySpsMock();
+            }
+            else
+            {
+                db = new SecurityApiContext();
+                Sp = new MySps();
+            }
+        }
         
         [HttpPost]
         public UserLogged Login(User user)
@@ -23,7 +38,7 @@ namespace SecurityCore.Controllers
             try
             {
                 EndUser UserReg = db.EndUser.Where(x => x.UserName.ToUpper() == user.UserName.ToUpper()).FirstOrDefault();
-                string passDb = new MySps().DesencriptaSp(UserReg.Password);
+                string passDb = Sp.DesencriptaSp(UserReg.Password);
                 bool isLogged = db.EndUser.Any(x => x.UserName.ToUpper() == user.UserName.ToUpper() &&
                     passDb == user.Password);
                 return new UserLogged() { IsLogged = isLogged, UserName = user.UserName.ToUpper(), Role = UserReg.UserTypeCd };

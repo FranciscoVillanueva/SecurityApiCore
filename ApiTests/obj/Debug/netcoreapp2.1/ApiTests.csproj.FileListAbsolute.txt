@@ -1,0 +1,17 @@
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\bin\Debug\netcoreapp2.1\ApiTests.deps.json
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\bin\Debug\netcoreapp2.1\ApiTests.runtimeconfig.json
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\bin\Debug\netcoreapp2.1\ApiTests.runtimeconfig.dev.json
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\bin\Debug\netcoreapp2.1\ApiTests.dll
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\bin\Debug\netcoreapp2.1\ApiTests.pdb
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\bin\Debug\netcoreapp2.1\SecurityCore.dll
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\bin\Debug\netcoreapp2.1\SecurityCore.pdb
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\obj\Debug\netcoreapp2.1\ApiTests.csprojAssemblyReference.cache
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\obj\Debug\netcoreapp2.1\ApiTests.csproj.CoreCompileInputs.cache
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\obj\Debug\netcoreapp2.1\ApiTests.AssemblyInfoInputs.cache
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\obj\Debug\netcoreapp2.1\ApiTests.AssemblyInfo.cs
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\obj\Debug\netcoreapp2.1\ApiTests.csproj.CopyComplete
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\obj\Debug\netcoreapp2.1\ApiTests.dll
+C:\Users\Curso\source\repos\SecurityCore\SecurityApiCore\ApiTests\obj\Debug\netcoreapp2.1\ApiTests.pdb

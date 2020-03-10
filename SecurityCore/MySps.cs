@@ -12,7 +12,7 @@ namespace SecurityCore
     {
         protected static string Key = "1234";
         protected static string connString = "Data source=microservicessttk2.database.windows.net;Initial catalog=SecurityApi;persist security info=True;user id=adminSttk;password=@Softtek01";
-        public string DesencriptaSp(byte[] hash)
+        public virtual string DesencriptaSp(byte[] hash)
         {
             //string pass;
             string sql = "EXEC dbo.DesencriptaVer2 @key = @Key, @hash = @Hash";
@@ -37,7 +37,7 @@ namespace SecurityCore
             return output;
         }
 
-        public byte[] EncriptaSp(string word)
+        public virtual byte[] EncriptaSp(string word)
         {
             string sql = "EXEC dbo.EncriptaVer2 @key = @Key, @word = @Word";
             SqlConnection conn = new SqlConnection(connString);
